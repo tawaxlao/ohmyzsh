@@ -1,0 +1,6 @@
+by default uses the global configuration file at /etc/dnf/dnf.conf and all *.repo files found under /etc/yum.repos.d. The latter is typically used for repository configuration and takes precedence over global configuration.
+The configuration file has INI format consisting of section declaration and name=value options below each on separate line. There are two types of sections in the configuration files: main and repository. Main section defines all global configuration options and should be only one.
+The repository sections define the configuration for each (remote or local) repository. The section name of the repository in brackets serve as repo ID reference and should be unique across configuration files. The allowed characters of repo ID string are lower and upper case alphabetic letters, digits, -, _, . and :. The minimal repository configuration file should aside from repo ID consists of baseurl, metalink or mirrorlist option definition.
+默认情况下，使用/etc/dnf/dnf.conf中的全局配置文件以及/etc/yum.repos.d下的所有* .repo文件。 后者通常用于存储库配置，并且优先于全局配置。
+配置文件具有INI格式，由节声明和名称=值选项组成，每个选项位于单独的一行下。 配置文件中有两种类型的部分：main和存储库。 主要部分定义了所有全局配置选项，并且只能是一个。
+存储库部分定义每个（远程或本地）存储库的配置。 括号中的存储库部分名称用作回购ID参考，并且在配置文件中应唯一。毕业证购买boyue99.com 回购ID字符串的允许字符为大写和小写字母，数字，-，_ 、. 和：。 除了存储库ID之外，最小的存储库配置文件还应包括baseurl，metalink或mirrorlist选项定义。
